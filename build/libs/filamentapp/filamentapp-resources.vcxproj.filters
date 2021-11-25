@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\baiduyun\githun\filament\build\libs\filamentapp\generated\resources\dummy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\build\libs\filamentapp\generated\resources\filamentapp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\5884f3afd807199202a77787d7d381ac\dummy.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\libs\filamentapp\materials\aiDefaultMat.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\libs\filamentapp\materials\aiDefaultTrans.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\libs\filamentapp\materials\depthVisualizer.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\libs\filamentapp\materials\transparentColor.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\5884f3afd807199202a77787d7d381ac\filamentapp.bin.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\libs\filamentapp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3F01DEE7-2486-355C-B754-2D59EE185A44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9C58E3C9-FA52-3582-A98B-DD5704FAB13F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\draco\src\draco\compression\point_cloud\algorithms\dynamic_integer_points_kd_tree_decoder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\draco\src\draco\compression\point_cloud\algorithms\float_points_tree_decoder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\draco\src\draco\compression\point_cloud\algorithms\point_cloud_compression_method.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\draco\src\draco\compression\point_cloud\algorithms\point_cloud_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\draco\src\draco\compression\point_cloud\algorithms\quantize_points_3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\draco\src\draco\compression\point_cloud\algorithms\queuing_policy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\draco\src\draco\compression\point_cloud\algorithms\dynamic_integer_points_kd_tree_decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\draco\src\draco\compression\point_cloud\algorithms\float_points_tree_decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\third_party\draco\tnt\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9439B859-98C6-3590-8B5E-F1C89761CC2D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9C58E3C9-FA52-3582-A98B-DD5704FAB13F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

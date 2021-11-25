@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\baiduyun\githun\filament\build\libs\gltfio\dummy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\build\libs\gltfio\gltfresources.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\339a1494b41340dd1e4a4d97a64f53bf\dummy.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\libs\gltfio\lit_fade.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\libs\gltfio\lit_masked.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\libs\gltfio\lit_opaque.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\libs\gltfio\lit_sheen.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\libs\gltfio\lit_transmission.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\libs\gltfio\lit_volume.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\libs\gltfio\specularGlossiness_fade.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\libs\gltfio\specularGlossiness_masked.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\libs\gltfio\specularGlossiness_opaque.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\libs\gltfio\unlit_fade.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\libs\gltfio\unlit_masked.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\libs\gltfio\unlit_opaque.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\339a1494b41340dd1e4a4d97a64f53bf\gltfresources.bin.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\libs\gltfio\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3F01DEE7-2486-355C-B754-2D59EE185A44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9C58E3C9-FA52-3582-A98B-DD5704FAB13F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

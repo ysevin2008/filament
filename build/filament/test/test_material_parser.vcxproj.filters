@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\baiduyun\githun\filament\filament\test\filament_test_material_parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\build\filament\test\resources\filament_test_resources.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\build\filament\test\resources\dummy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_growth_policy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\f9db8ca57e125ee4c2a8d7e350c55852\filament_test_resources.bin.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\f9db8ca57e125ee4c2a8d7e350c55852\dummy.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\filament\test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3F01DEE7-2486-355C-B754-2D59EE185A44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9439B859-98C6-3590-8B5E-F1C89761CC2D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9C58E3C9-FA52-3582-A98B-DD5704FAB13F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

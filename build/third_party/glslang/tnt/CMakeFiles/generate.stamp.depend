@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+D:/baiduyun/githun/filament/third_party/glslang/CHANGES.md
+D:/baiduyun/githun/filament/third_party/glslang/build_info.h.tmpl
+D:/baiduyun/githun/filament/third_party/glslang/parse_version.cmake
+D:/baiduyun/githun/filament/third_party/glslang/tnt/CMakeLists.txt
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CTest.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CTestTargets.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CTestUseLaunchers.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/DartConfiguration.tcl.in
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/GNUInstallDirs.cmake

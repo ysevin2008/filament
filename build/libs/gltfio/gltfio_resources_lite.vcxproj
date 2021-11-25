@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A57EE8A6-1266-3FA6-A57B-579C051A3231}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gltfio_resources_lite</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gltfio_resources_lite.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gltfio_resources_lite</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gltfio_resources_lite.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gltfio_resources_lite</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gltfio_resources_lite.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gltfio_resources_lite</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gltfio_resources_lite.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gltfio_resources_lite</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;FILAMENT_SUPPORTS_OPENGL;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;FILAMENT_SUPPORTS_OPENGL;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;FILAMENT_SUPPORTS_OPENGL;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\512d79d1f16539327a27501277d941c5\dummy.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating lite/dummy.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+echo // &gt; D:/baiduyun/githun/filament/build/libs/gltfio/lite/dummy.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\dummy.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating lite/dummy.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+echo // &gt; D:/baiduyun/githun/filament/build/libs/gltfio/lite/dummy.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\dummy.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating lite/dummy.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+echo // &gt; D:/baiduyun/githun/filament/build/libs/gltfio/lite/dummy.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\dummy.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating lite/dummy.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+echo // &gt; D:/baiduyun/githun/filament/build/libs/gltfio/lite/dummy.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\dummy.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_fade.mat">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling material D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.mat to D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.filamat</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\tools\matc\Debug\matc.exe -a opengl -p desktop -gd -o D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.filamat D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.mat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\tools\matc\Debug\matc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_fade.filamat</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling material D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.mat to D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.filamat</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\tools\matc\Release\matc.exe -a opengl -p desktop -gd -o D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.filamat D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.mat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\tools\matc\Release\matc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_fade.filamat</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Compiling material D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.mat to D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.filamat</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\tools\matc\MinSizeRel\matc.exe -a opengl -p desktop -gd -o D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.filamat D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.mat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\tools\matc\MinSizeRel\matc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_fade.filamat</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Compiling material D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.mat to D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.filamat</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\tools\matc\RelWithDebInfo\matc.exe -a opengl -p desktop -gd -o D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.filamat D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.mat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\tools\matc\RelWithDebInfo\matc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_fade.filamat</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_opaque.mat">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling material D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.mat to D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.filamat</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\tools\matc\Debug\matc.exe -a opengl -p desktop -gd -o D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.filamat D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.mat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\tools\matc\Debug\matc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_opaque.filamat</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling material D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.mat to D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.filamat</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\tools\matc\Release\matc.exe -a opengl -p desktop -gd -o D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.filamat D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.mat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\tools\matc\Release\matc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_opaque.filamat</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Compiling material D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.mat to D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.filamat</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\tools\matc\MinSizeRel\matc.exe -a opengl -p desktop -gd -o D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.filamat D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.mat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\tools\matc\MinSizeRel\matc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_opaque.filamat</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Compiling material D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.mat to D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.filamat</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\tools\matc\RelWithDebInfo\matc.exe -a opengl -p desktop -gd -o D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.filamat D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.mat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\tools\matc\RelWithDebInfo\matc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_opaque.filamat</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\512d79d1f16539327a27501277d941c5\gltfresources_lite.bin.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating lite/gltfresources_lite.bin, lite/gltfresources_lite.S, lite/gltfresources_lite.apple.S, lite/gltfresources_lite.h, lite/gltfresources_lite.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\tools\resgen\Debug\resgen.exe -qcx D:/baiduyun/githun/filament/build/libs/gltfio/lite -p gltfresources_lite D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.filamat D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.filamat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\tools\resgen\Debug\resgen.exe;D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_opaque.filamat;D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_fade.filamat;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.bin;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.S;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.apple.S;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.h;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating lite/gltfresources_lite.bin, lite/gltfresources_lite.S, lite/gltfresources_lite.apple.S, lite/gltfresources_lite.h, lite/gltfresources_lite.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\tools\resgen\Release\resgen.exe -qcx D:/baiduyun/githun/filament/build/libs/gltfio/lite -p gltfresources_lite D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.filamat D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.filamat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\tools\resgen\Release\resgen.exe;D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_opaque.filamat;D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_fade.filamat;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.bin;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.S;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.apple.S;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.h;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating lite/gltfresources_lite.bin, lite/gltfresources_lite.S, lite/gltfresources_lite.apple.S, lite/gltfresources_lite.h, lite/gltfresources_lite.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\tools\resgen\MinSizeRel\resgen.exe -qcx D:/baiduyun/githun/filament/build/libs/gltfio/lite -p gltfresources_lite D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.filamat D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.filamat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\tools\resgen\MinSizeRel\resgen.exe;D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_opaque.filamat;D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_fade.filamat;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.bin;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.S;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.apple.S;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.h;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating lite/gltfresources_lite.bin, lite/gltfresources_lite.S, lite/gltfresources_lite.apple.S, lite/gltfresources_lite.h, lite/gltfresources_lite.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\tools\resgen\RelWithDebInfo\resgen.exe -qcx D:/baiduyun/githun/filament/build/libs/gltfio/lite -p gltfresources_lite D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_opaque.filamat D:/baiduyun/githun/filament/build/libs/gltfio/lite/lit_fade.filamat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\tools\resgen\RelWithDebInfo\resgen.exe;D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_opaque.filamat;D:\baiduyun\githun\filament\build\libs\gltfio\lite\lit_fade.filamat;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.bin;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.S;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.apple.S;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.h;D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\libs\gltfio\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/baiduyun/githun/filament/libs/gltfio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/libs/gltfio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\CMakeFiles\3.20.3\CMakeASMCompiler.cmake;D:\baiduyun\githun\filament\libs\gltfio\materials\gltflite.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\sheen.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\transmission.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\ubershader.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\volume.mat.in;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\CMakeASMInformation.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/baiduyun/githun/filament/libs/gltfio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/libs/gltfio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\CMakeFiles\3.20.3\CMakeASMCompiler.cmake;D:\baiduyun\githun\filament\libs\gltfio\materials\gltflite.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\sheen.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\transmission.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\ubershader.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\volume.mat.in;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\CMakeASMInformation.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/baiduyun/githun/filament/libs/gltfio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/libs/gltfio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\CMakeFiles\3.20.3\CMakeASMCompiler.cmake;D:\baiduyun\githun\filament\libs\gltfio\materials\gltflite.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\sheen.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\transmission.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\ubershader.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\volume.mat.in;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\CMakeASMInformation.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/baiduyun/githun/filament/libs/gltfio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/libs/gltfio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\CMakeFiles\3.20.3\CMakeASMCompiler.cmake;D:\baiduyun\githun\filament\libs\gltfio\materials\gltflite.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\sheen.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\transmission.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\ubershader.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\volume.mat.in;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\CMakeASMInformation.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\baiduyun\githun\filament\build\libs\gltfio\lite\dummy.c" />
+    <ClCompile Include="D:\baiduyun\githun\filament\build\libs\gltfio\lite\gltfresources_lite.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\ZERO_CHECK.vcxproj">
+      <Project>{C81F8C41-FE7E-32AB-96E5-9EE9D2248535}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\tools\matc\matc.vcxproj">
+      <Project>{FB71FEAF-29F0-3E17-B3BB-FBD92D2C78FD}</Project>
+      <Name>matc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\tools\resgen\resgen.vcxproj">
+      <Project>{AF6070BF-4A47-3D2F-876C-833B8772DEA0}</Project>
+      <Name>resgen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

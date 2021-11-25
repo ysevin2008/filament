@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_averages_and_directions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_block_sizes2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_color_quantize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_color_unquantize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_compress_symbolic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_decompress_symbolic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_encoding_choice_error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_find_best_partitioning.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_ideal_endpoints_and_weights.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_image_load_store.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_integer_sequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_ktx_dds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_kmeans_partitioning.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_partition_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_percentile_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_pick_best_endpoint_format.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_quantization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_toplevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_symbolic_physical.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_weight_align.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_weight_quant_xfer_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_compute_variance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\mathlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\softfloat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\astc_codec_internals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\mathlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\astcenc\Source\softfloat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\third_party\astcenc\tnt\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9439B859-98C6-3590-8B5E-F1C89761CC2D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9C58E3C9-FA52-3582-A98B-DD5704FAB13F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

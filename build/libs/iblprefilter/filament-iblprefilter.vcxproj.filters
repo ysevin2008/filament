@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\baiduyun\githun\filament\libs\iblprefilter\src\IBLPrefilterContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\build\libs\iblprefilter\generated\resources\iblprefilter_materials.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\baiduyun\githun\filament\build\libs\iblprefilter\generated\resources\iblprefilter_materials.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\iblprefilter\include\filament-iblprefilter\IBLPrefilterContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_growth_policy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\libs\iblprefilter\src\materials\equirectToCube.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\libs\iblprefilter\src\materials\generateKernel.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\libs\iblprefilter\src\materials\iblprefilter.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\270dd6684b7a2d70aadff7257cebc49f\iblprefilter_materials.bin.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\libs\iblprefilter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3F01DEE7-2486-355C-B754-2D59EE185A44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9439B859-98C6-3590-8B5E-F1C89761CC2D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9C58E3C9-FA52-3582-A98B-DD5704FAB13F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

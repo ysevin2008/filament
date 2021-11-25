@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+D:/baiduyun/githun/filament/build/CMakeFiles/3.20.3/CMakeASMCompiler.cmake
+D:/baiduyun/githun/filament/libs/gltfio/CMakeLists.txt
+D:/baiduyun/githun/filament/libs/gltfio/materials/gltflite.mat.in
+D:/baiduyun/githun/filament/libs/gltfio/materials/sheen.mat.in
+D:/baiduyun/githun/filament/libs/gltfio/materials/transmission.mat.in
+D:/baiduyun/githun/filament/libs/gltfio/materials/ubershader.mat.in
+D:/baiduyun/githun/filament/libs/gltfio/materials/volume.mat.in
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeASMInformation.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/Compiler/MSVC-ASM.cmake

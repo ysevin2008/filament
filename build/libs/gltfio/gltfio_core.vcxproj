@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{86324886-958D-38EE-86B6-612C7A8078F5}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gltfio_core</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gltfio_core.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gltfio_core</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gltfio_core.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gltfio_core</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gltfio_core.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gltfio_core</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gltfio_core.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gltfio_core</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;GLTFIO_DRACO_SUPPORTED=1;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;GLTFIO_DRACO_SUPPORTED=1;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;GLTFIO_DRACO_SUPPORTED=1;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;GLTFIO_DRACO_SUPPORTED=1;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;GLTFIO_DRACO_SUPPORTED=1;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;GLTFIO_DRACO_SUPPORTED=1;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;GLTFIO_DRACO_SUPPORTED=1;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;GLTFIO_DRACO_SUPPORTED=1;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;GLTFIO_DRACO_SUPPORTED=1;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;GLTFIO_DRACO_SUPPORTED=1;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;GLTFIO_DRACO_SUPPORTED=1;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;GLTFIO_DRACO_SUPPORTED=1;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\libs\gltfio\include;D:\baiduyun\githun\filament\build\libs\gltfio;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\third_party\cgltf\tnt\..;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\geometry\include;D:\baiduyun\githun\filament\third_party\hat-trie\tnt\..;D:\baiduyun\githun\filament\build\third_party\draco\tnt;D:\baiduyun\githun\filament\third_party\draco\tnt\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\libs\gltfio\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/baiduyun/githun/filament/libs/gltfio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/libs/gltfio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\CMakeFiles\3.20.3\CMakeASMCompiler.cmake;D:\baiduyun\githun\filament\libs\gltfio\materials\gltflite.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\sheen.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\transmission.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\ubershader.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\volume.mat.in;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\CMakeASMInformation.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/baiduyun/githun/filament/libs/gltfio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/libs/gltfio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\CMakeFiles\3.20.3\CMakeASMCompiler.cmake;D:\baiduyun\githun\filament\libs\gltfio\materials\gltflite.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\sheen.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\transmission.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\ubershader.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\volume.mat.in;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\CMakeASMInformation.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/baiduyun/githun/filament/libs/gltfio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/libs/gltfio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\CMakeFiles\3.20.3\CMakeASMCompiler.cmake;D:\baiduyun\githun\filament\libs\gltfio\materials\gltflite.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\sheen.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\transmission.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\ubershader.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\volume.mat.in;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\CMakeASMInformation.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/baiduyun/githun/filament/libs/gltfio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/libs/gltfio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\CMakeFiles\3.20.3\CMakeASMCompiler.cmake;D:\baiduyun\githun\filament\libs\gltfio\materials\gltflite.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\sheen.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\transmission.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\ubershader.mat.in;D:\baiduyun\githun\filament\libs\gltfio\materials\volume.mat.in;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\CMakeASMInformation.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\libs\gltfio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\include\gltfio\Animator.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\include\gltfio\AssetLoader.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\include\gltfio\MaterialProvider.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\include\gltfio\ResourceLoader.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\include\gltfio\FilamentAsset.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\include\gltfio\FilamentInstance.h" />
+    <ClCompile Include="D:\baiduyun\githun\filament\libs\gltfio\src\Animator.cpp" />
+    <ClCompile Include="D:\baiduyun\githun\filament\libs\gltfio\src\AssetLoader.cpp" />
+    <ClCompile Include="D:\baiduyun\githun\filament\libs\gltfio\src\DependencyGraph.cpp" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\src\DependencyGraph.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\src\DracoCache.h" />
+    <ClCompile Include="D:\baiduyun\githun\filament\libs\gltfio\src\DracoCache.cpp" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\src\FFilamentAsset.h" />
+    <ClCompile Include="D:\baiduyun\githun\filament\libs\gltfio\src\FilamentAsset.cpp" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\src\FFilamentInstance.h" />
+    <ClCompile Include="D:\baiduyun\githun\filament\libs\gltfio\src\FilamentInstance.cpp" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\src\GltfEnums.h" />
+    <ClCompile Include="D:\baiduyun\githun\filament\libs\gltfio\src\MaterialProvider.cpp" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\src\MorphHelper.h" />
+    <ClCompile Include="D:\baiduyun\githun\filament\libs\gltfio\src\MorphHelper.cpp" />
+    <ClCompile Include="D:\baiduyun\githun\filament\libs\gltfio\src\ResourceLoader.cpp" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\src\TangentsJob.h" />
+    <ClCompile Include="D:\baiduyun\githun\filament\libs\gltfio\src\TangentsJob.cpp" />
+    <ClCompile Include="D:\baiduyun\githun\filament\libs\gltfio\src\UbershaderLoader.cpp" />
+    <ClCompile Include="D:\baiduyun\githun\filament\libs\gltfio\src\Wireframe.cpp" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\src\Wireframe.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\src\math.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\libs\gltfio\src\upcast.h" />
+    <ClCompile Include="D:\baiduyun\githun\filament\libs\gltfio\src\Image.cpp" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_growth_policy.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_hash.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_map.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_set.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\cgltf\cgltf_write.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\cgltf\cgltf.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\deprecated\rrsprintf.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_c_lexer.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_connected_components.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_divide.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_dxt.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_easy_font.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_herringbone_wang_tile.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_image.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_image_resize.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_image_write.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_leakcheck.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_perlin.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_rect_pack.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_sprintf.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_textedit.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_tilemap_editor.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_truetype.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_voxel_render.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stretchy_buffer.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\cave_parse.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\caveview.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\glext.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\glext_list.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\stb_gl.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\stb_glprog.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\oversample\stb_wingraph.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\prerelease\stb_lib.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\hat-trie\tsl\htrie_hash.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\hat-trie\tsl\htrie_map.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\hat-trie\tsl\htrie_set.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\ZERO_CHECK.vcxproj">
+      <Project>{C81F8C41-FE7E-32AB-96E5-9EE9D2248535}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\filament\backend\backend.vcxproj">
+      <Project>{2E201569-C394-3B3D-9600-B4BCC8A214F7}</Project>
+      <Name>backend</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\bluegl\bluegl.vcxproj">
+      <Project>{58E488A3-837D-3617-A098-7CB9FA09A126}</Project>
+      <Name>bluegl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\draco\tnt\dracodec.vcxproj">
+      <Project>{D9DB5D68-851D-3DC6-B698-6A3C2E11C096}</Project>
+      <Name>dracodec</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\filabridge\filabridge.vcxproj">
+      <Project>{FDAAFE52-1C9F-3434-B16E-6C1FDF76BA60}</Project>
+      <Name>filabridge</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\filaflat\filaflat.vcxproj">
+      <Project>{CDEC3DB5-7E77-36DA-B306-5B5AFCED32E8}</Project>
+      <Name>filaflat</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\filament\filament.vcxproj">
+      <Project>{68F4C07A-1F80-39CF-B905-0CBE21C12B8B}</Project>
+      <Name>filament</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\geometry\geometry.vcxproj">
+      <Project>{566E1A1B-5F47-3D61-B4F0-F84AED9C6DA4}</Project>
+      <Name>geometry</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\gltfio\gltfio_resources.vcxproj">
+      <Project>{43706A15-C36E-3869-85F3-8D77F6B3D209}</Project>
+      <Name>gltfio_resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\ibl\ibl-lite.vcxproj">
+      <Project>{AD366788-FDB7-3B9F-B4C1-26D106423D9F}</Project>
+      <Name>ibl-lite</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\math\math.vcxproj">
+      <Project>{39FBFF4C-71D0-3DB1-BFE1-BC2CB6A67BB1}</Project>
+      <Name>math</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\utils\utils.vcxproj">
+      <Project>{CD76B848-7DF5-3E20-B0A8-AD32CD7ABD4B}</Project>
+      <Name>utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

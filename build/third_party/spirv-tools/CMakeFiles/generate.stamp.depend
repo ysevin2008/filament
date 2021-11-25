@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/baiduyun/githun/filament/third_party/spirv-tools/CMakeLists.txt
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/FindPackageMessage.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/FindPythonInterp.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/GNUInstallDirs.cmake

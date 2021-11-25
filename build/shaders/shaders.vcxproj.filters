@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\baiduyun\githun\filament\build\shaders\generated\shaders.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\ambient_occlusion.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\brdf.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\common_getters.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\common_graphics.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\common_lighting.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\common_material.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\common_math.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\common_shading.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\common_shadowing.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\common_types.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\depth_main.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\fog.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\getters.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\getters.vs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\inputs.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\inputs.vs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\light_directional.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\light_indirect.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\light_punctual.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\main.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\main.vs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\material_inputs.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\material_inputs.vs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\post_process.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\post_process.vs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\post_process_getters.vs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\post_process_inputs.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\post_process_inputs.vs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\shading_lit.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\shading_lit_custom.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\shading_model_cloth.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\shading_model_standard.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\shading_model_subsurface.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\shading_parameters.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\shading_unlit.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\shadowing.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\565cbcbac9c7c612a17a374dc63a4770\vignette.fs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\46713acf80514868ba20c65716f1b2b0\shaders.bin.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\shaders\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3F01DEE7-2486-355C-B754-2D59EE185A44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9C58E3C9-FA52-3582-A98B-DD5704FAB13F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8764ABA8-7BAA-32C4-A11B-968D74F4517C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>hellotriangle</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\samples\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hellotriangle.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hellotriangle</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\samples\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hellotriangle.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hellotriangle</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\samples\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">hellotriangle.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">hellotriangle</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\samples\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">hellotriangle.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">hellotriangle</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;SPIRV_CROSS_EXCEPTIONS_TO_ASSERTIONS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;SPIRV_CROSS_EXCEPTIONS_TO_ASSERTIONS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;SPIRV_CROSS_EXCEPTIONS_TO_ASSERTIONS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\sample-resources.lib;..\libs\filamentapp\Debug\filamentapp.lib;..\third_party\libassimp\tnt\Debug\assimp.lib;..\third_party\libz\tnt\Debug\z.lib;..\libs\iblprefilter\Debug\filament-iblprefilter.lib;..\third_party\libsdl2\tnt\Debug\sdl2.lib;dinput8.lib;dxguid.lib;imagehlp.lib;imm32.lib;ole32.lib;oleaut32.lib;shell32.lib;user32.lib;uuid.lib;version.lib;winmm.lib;..\libs\filamat\Debug\filamat.lib;..\shaders\Debug\shaders.lib;..\third_party\smol-v\tnt\Debug\smol-v.lib;..\third_party\glslang\tnt\SPIRV\Debug\SPIRVd.lib;..\third_party\glslang\tnt\glslang\Debug\glslangd.lib;..\third_party\glslang\tnt\OGLCompilersDLL\Debug\OGLCompilerd.lib;..\third_party\glslang\tnt\glslang\OSDependent\Windows\Debug\OSDependentd.lib;..\third_party\glslang\tnt\SPIRV\Debug\SPVRemapperd.lib;..\third_party\spirv-tools\source\opt\Debug\SPIRV-Tools-opt.lib;..\third_party\spirv-tools\source\Debug\SPIRV-Tools.lib;..\third_party\spirv-cross\tnt\Debug\spirv-cross-glsl.lib;..\third_party\spirv-cross\tnt\Debug\spirv-cross-msl.lib;..\third_party\spirv-cross\tnt\Debug\spirv-cross-core.lib;..\third_party\getopt\Debug\getopt.lib;..\libs\filagui\Debug\filagui.lib;..\filament\Debug\filament.lib;..\filament\backend\Debug\backend.lib;..\libs\bluegl\Debug\bluegl.lib;opengl32.lib;gdi32.lib;..\libs\filaflat\Debug\filaflat.lib;..\libs\filabridge\Debug\filabridge.lib;..\libs\ibl\Debug\ibl-lite.lib;..\third_party\imgui\tnt\Debug\imgui.lib;..\libs\image\Debug\image.lib;..\libs\camutils\Debug\camutils.lib;..\libs\geometry\Debug\geometry.lib;..\libs\math\Debug\math.lib;..\libs\utils\Debug\utils.lib;Shlwapi.lib;..\third_party\libsdl2\tnt\Debug\sdl2main.lib;..\libs\filamentapp\Debug\filamentapp-resources.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -Wl,--gc-sections</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/baiduyun/githun/filament/build/samples/Debug/hellotriangle.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/baiduyun/githun/filament/build/samples/Debug/hellotriangle.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;SPIRV_CROSS_EXCEPTIONS_TO_ASSERTIONS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;SPIRV_CROSS_EXCEPTIONS_TO_ASSERTIONS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;SPIRV_CROSS_EXCEPTIONS_TO_ASSERTIONS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\sample-resources.lib;..\libs\filamentapp\Release\filamentapp.lib;..\third_party\libassimp\tnt\Release\assimp.lib;..\third_party\libz\tnt\Release\z.lib;..\libs\iblprefilter\Release\filament-iblprefilter.lib;..\third_party\libsdl2\tnt\Release\sdl2.lib;dinput8.lib;dxguid.lib;imagehlp.lib;imm32.lib;ole32.lib;oleaut32.lib;shell32.lib;user32.lib;uuid.lib;version.lib;winmm.lib;..\libs\filamat\Release\filamat.lib;..\shaders\Release\shaders.lib;..\third_party\smol-v\tnt\Release\smol-v.lib;..\third_party\glslang\tnt\SPIRV\Release\SPIRV.lib;..\third_party\glslang\tnt\glslang\Release\glslang.lib;..\third_party\glslang\tnt\OGLCompilersDLL\Release\OGLCompiler.lib;..\third_party\glslang\tnt\glslang\OSDependent\Windows\Release\OSDependent.lib;..\third_party\glslang\tnt\SPIRV\Release\SPVRemapper.lib;..\third_party\spirv-tools\source\opt\Release\SPIRV-Tools-opt.lib;..\third_party\spirv-tools\source\Release\SPIRV-Tools.lib;..\third_party\spirv-cross\tnt\Release\spirv-cross-glsl.lib;..\third_party\spirv-cross\tnt\Release\spirv-cross-msl.lib;..\third_party\spirv-cross\tnt\Release\spirv-cross-core.lib;..\third_party\getopt\Release\getopt.lib;..\libs\filagui\Release\filagui.lib;..\filament\Release\filament.lib;..\filament\backend\Release\backend.lib;..\libs\bluegl\Release\bluegl.lib;opengl32.lib;gdi32.lib;..\libs\filaflat\Release\filaflat.lib;..\libs\filabridge\Release\filabridge.lib;..\libs\ibl\Release\ibl-lite.lib;..\third_party\imgui\tnt\Release\imgui.lib;..\libs\image\Release\image.lib;..\libs\camutils\Release\camutils.lib;..\libs\geometry\Release\geometry.lib;..\libs\math\Release\math.lib;..\libs\utils\Release\utils.lib;Shlwapi.lib;..\third_party\libsdl2\tnt\Release\sdl2main.lib;..\libs\filamentapp\Release\filamentapp-resources.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -Wl,--gc-sections</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/baiduyun/githun/filament/build/samples/Release/hellotriangle.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/baiduyun/githun/filament/build/samples/Release/hellotriangle.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;SPIRV_CROSS_EXCEPTIONS_TO_ASSERTIONS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;SPIRV_CROSS_EXCEPTIONS_TO_ASSERTIONS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;SPIRV_CROSS_EXCEPTIONS_TO_ASSERTIONS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\sample-resources.lib;..\libs\filamentapp\MinSizeRel\filamentapp.lib;..\third_party\libassimp\tnt\MinSizeRel\assimp.lib;..\third_party\libz\tnt\MinSizeRel\z.lib;..\libs\iblprefilter\MinSizeRel\filament-iblprefilter.lib;..\third_party\libsdl2\tnt\MinSizeRel\sdl2.lib;dinput8.lib;dxguid.lib;imagehlp.lib;imm32.lib;ole32.lib;oleaut32.lib;shell32.lib;user32.lib;uuid.lib;version.lib;winmm.lib;..\libs\filamat\MinSizeRel\filamat.lib;..\shaders\MinSizeRel\shaders.lib;..\third_party\smol-v\tnt\MinSizeRel\smol-v.lib;..\third_party\glslang\tnt\SPIRV\MinSizeRel\SPIRV.lib;..\third_party\glslang\tnt\glslang\MinSizeRel\glslang.lib;..\third_party\glslang\tnt\OGLCompilersDLL\MinSizeRel\OGLCompiler.lib;..\third_party\glslang\tnt\glslang\OSDependent\Windows\MinSizeRel\OSDependent.lib;..\third_party\glslang\tnt\SPIRV\MinSizeRel\SPVRemapper.lib;..\third_party\spirv-tools\source\opt\MinSizeRel\SPIRV-Tools-opt.lib;..\third_party\spirv-tools\source\MinSizeRel\SPIRV-Tools.lib;..\third_party\spirv-cross\tnt\MinSizeRel\spirv-cross-glsl.lib;..\third_party\spirv-cross\tnt\MinSizeRel\spirv-cross-msl.lib;..\third_party\spirv-cross\tnt\MinSizeRel\spirv-cross-core.lib;..\third_party\getopt\MinSizeRel\getopt.lib;..\libs\filagui\MinSizeRel\filagui.lib;..\filament\MinSizeRel\filament.lib;..\filament\backend\MinSizeRel\backend.lib;..\libs\bluegl\MinSizeRel\bluegl.lib;opengl32.lib;gdi32.lib;..\libs\filaflat\MinSizeRel\filaflat.lib;..\libs\filabridge\MinSizeRel\filabridge.lib;..\libs\ibl\MinSizeRel\ibl-lite.lib;..\third_party\imgui\tnt\MinSizeRel\imgui.lib;..\libs\image\MinSizeRel\image.lib;..\libs\camutils\MinSizeRel\camutils.lib;..\libs\geometry\MinSizeRel\geometry.lib;..\libs\math\MinSizeRel\math.lib;..\libs\utils\MinSizeRel\utils.lib;Shlwapi.lib;..\third_party\libsdl2\tnt\MinSizeRel\sdl2main.lib;..\libs\filamentapp\MinSizeRel\filamentapp-resources.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -Wl,--gc-sections</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/baiduyun/githun/filament/build/samples/MinSizeRel/hellotriangle.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/baiduyun/githun/filament/build/samples/MinSizeRel/hellotriangle.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;SPIRV_CROSS_EXCEPTIONS_TO_ASSERTIONS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;SPIRV_CROSS_EXCEPTIONS_TO_ASSERTIONS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;FILAMENT_IBL_LITE=1;SPIRV_CROSS_EXCEPTIONS_TO_ASSERTIONS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\samples;D:\baiduyun\githun\filament\libs\filamentapp\include;D:\baiduyun\githun\filament\third_party\libassimp\tnt\..\include;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\filament\include;D:\baiduyun\githun\filament\filament\backend\include;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\libs\filaflat\include;D:\baiduyun\githun\filament\libs\filabridge\include;D:\baiduyun\githun\filament\libs\ibl\include;D:\baiduyun\githun\filament\libs\iblprefilter\include;D:\baiduyun\githun\filament\third_party\libsdl2\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\libs\filamat\include;D:\baiduyun\githun\filament\build\shaders;D:\baiduyun\githun\filament\third_party\smol-v\tnt\..\source;D:\baiduyun\githun\filament\build\include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Include;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\Public;D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\..\MachineIndependent;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..;D:\baiduyun\githun\filament\third_party\glslang\SPIRV\tnt\..\..;D:\baiduyun\githun\filament\third_party\spirv-tools\include;D:\baiduyun\githun\filament\third_party\spirv-tools\external\SPIRV-Headers\include;D:\baiduyun\githun\filament\third_party\spirv-cross\tnt\..;D:\baiduyun\githun\filament\third_party\getopt\include;D:\baiduyun\githun\filament\third_party\imgui\tnt\..;D:\baiduyun\githun\filament\libs\filagui\include;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\camutils\include;D:\baiduyun\githun\filament\libs\geometry\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\sample-resources.lib;..\libs\filamentapp\RelWithDebInfo\filamentapp.lib;..\third_party\libassimp\tnt\RelWithDebInfo\assimp.lib;..\third_party\libz\tnt\RelWithDebInfo\z.lib;..\libs\iblprefilter\RelWithDebInfo\filament-iblprefilter.lib;..\third_party\libsdl2\tnt\RelWithDebInfo\sdl2.lib;dinput8.lib;dxguid.lib;imagehlp.lib;imm32.lib;ole32.lib;oleaut32.lib;shell32.lib;user32.lib;uuid.lib;version.lib;winmm.lib;..\libs\filamat\RelWithDebInfo\filamat.lib;..\shaders\RelWithDebInfo\shaders.lib;..\third_party\smol-v\tnt\RelWithDebInfo\smol-v.lib;..\third_party\glslang\tnt\SPIRV\RelWithDebInfo\SPIRV.lib;..\third_party\glslang\tnt\glslang\RelWithDebInfo\glslang.lib;..\third_party\glslang\tnt\OGLCompilersDLL\RelWithDebInfo\OGLCompiler.lib;..\third_party\glslang\tnt\glslang\OSDependent\Windows\RelWithDebInfo\OSDependent.lib;..\third_party\glslang\tnt\SPIRV\RelWithDebInfo\SPVRemapper.lib;..\third_party\spirv-tools\source\opt\RelWithDebInfo\SPIRV-Tools-opt.lib;..\third_party\spirv-tools\source\RelWithDebInfo\SPIRV-Tools.lib;..\third_party\spirv-cross\tnt\RelWithDebInfo\spirv-cross-glsl.lib;..\third_party\spirv-cross\tnt\RelWithDebInfo\spirv-cross-msl.lib;..\third_party\spirv-cross\tnt\RelWithDebInfo\spirv-cross-core.lib;..\third_party\getopt\RelWithDebInfo\getopt.lib;..\libs\filagui\RelWithDebInfo\filagui.lib;..\filament\RelWithDebInfo\filament.lib;..\filament\backend\RelWithDebInfo\backend.lib;..\libs\bluegl\RelWithDebInfo\bluegl.lib;opengl32.lib;gdi32.lib;..\libs\filaflat\RelWithDebInfo\filaflat.lib;..\libs\filabridge\RelWithDebInfo\filabridge.lib;..\libs\ibl\RelWithDebInfo\ibl-lite.lib;..\third_party\imgui\tnt\RelWithDebInfo\imgui.lib;..\libs\image\RelWithDebInfo\image.lib;..\libs\camutils\RelWithDebInfo\camutils.lib;..\libs\geometry\RelWithDebInfo\geometry.lib;..\libs\math\RelWithDebInfo\math.lib;..\libs\utils\RelWithDebInfo\utils.lib;Shlwapi.lib;..\third_party\libsdl2\tnt\RelWithDebInfo\sdl2main.lib;..\libs\filamentapp\RelWithDebInfo\filamentapp-resources.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -Wl,--gc-sections</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/baiduyun/githun/filament/build/samples/RelWithDebInfo/hellotriangle.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/baiduyun/githun/filament/build/samples/RelWithDebInfo/hellotriangle.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/baiduyun/githun/filament/samples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/samples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\CMakeFiles\3.20.3\CMakeASMCompiler.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\CMakeASMInformation.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\samples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/baiduyun/githun/filament/samples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/samples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\CMakeFiles\3.20.3\CMakeASMCompiler.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\CMakeASMInformation.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\samples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/baiduyun/githun/filament/samples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/samples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\CMakeFiles\3.20.3\CMakeASMCompiler.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\CMakeASMInformation.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\samples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/baiduyun/githun/filament/samples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/samples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\CMakeFiles\3.20.3\CMakeASMCompiler.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\CMakeASMInformation.cmake;D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\share\cmake-3.20\Modules\Compiler\MSVC-ASM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\samples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\baiduyun\githun\filament\samples\hellotriangle.cpp" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_growth_policy.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_hash.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_map.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_set.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\deprecated\rrsprintf.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_c_lexer.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_connected_components.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_divide.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_dxt.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_easy_font.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_herringbone_wang_tile.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_image.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_image_resize.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_image_write.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_leakcheck.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_perlin.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_rect_pack.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_sprintf.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_textedit.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_tilemap_editor.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_truetype.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_voxel_render.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stretchy_buffer.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\cave_parse.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\caveview.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\glext.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\glext_list.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\stb_gl.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\stb_glprog.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\oversample\stb_wingraph.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\prerelease\stb_lib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\ZERO_CHECK.vcxproj">
+      <Project>{C81F8C41-FE7E-32AB-96E5-9EE9D2248535}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\glslang\tnt\OGLCompilersDLL\OGLCompiler.vcxproj">
+      <Project>{5D3E0F32-9F49-3E77-A93C-0577A7DD1C65}</Project>
+      <Name>OGLCompiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\glslang\tnt\glslang\OSDependent\Windows\OSDependent.vcxproj">
+      <Project>{53FDE90E-63E8-3C3A-933F-B7AC1F349E6C}</Project>
+      <Name>OSDependent</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\glslang\tnt\SPIRV\SPIRV.vcxproj">
+      <Project>{F3B595A5-FA33-3E52-8FD7-FDC1BA4D68EA}</Project>
+      <Name>SPIRV</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\spirv-tools\source\opt\SPIRV-Tools-opt.vcxproj">
+      <Project>{345CA373-5368-3610-8EC1-3FCC7CF0A303}</Project>
+      <Name>SPIRV-Tools-opt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\spirv-tools\source\SPIRV-Tools-static.vcxproj">
+      <Project>{BD4E1EB5-9F01-3C42-9E7B-A262D3CF96D8}</Project>
+      <Name>SPIRV-Tools-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\glslang\tnt\SPIRV\SPVRemapper.vcxproj">
+      <Project>{2584A6BC-1680-33BC-825D-AB45438E5C53}</Project>
+      <Name>SPVRemapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\libassimp\tnt\assimp.vcxproj">
+      <Project>{04EE86C7-44BA-3EED-AF72-CF63AFF631AB}</Project>
+      <Name>assimp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\filament\backend\backend.vcxproj">
+      <Project>{2E201569-C394-3B3D-9600-B4BCC8A214F7}</Project>
+      <Name>backend</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\bluegl\bluegl.vcxproj">
+      <Project>{58E488A3-837D-3617-A098-7CB9FA09A126}</Project>
+      <Name>bluegl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\camutils\camutils.vcxproj">
+      <Project>{A6DEF8D6-1F46-3D5F-904A-D74DB584B07E}</Project>
+      <Name>camutils</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\filabridge\filabridge.vcxproj">
+      <Project>{FDAAFE52-1C9F-3434-B16E-6C1FDF76BA60}</Project>
+      <Name>filabridge</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\filaflat\filaflat.vcxproj">
+      <Project>{CDEC3DB5-7E77-36DA-B306-5B5AFCED32E8}</Project>
+      <Name>filaflat</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\filagui\filagui.vcxproj">
+      <Project>{DC633706-102B-38F8-84A6-874BC4B11CB3}</Project>
+      <Name>filagui</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\filamat\filamat.vcxproj">
+      <Project>{98F28E9B-44E8-3112-9CD3-6C25167157D3}</Project>
+      <Name>filamat</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\filament\filament.vcxproj">
+      <Project>{68F4C07A-1F80-39CF-B905-0CBE21C12B8B}</Project>
+      <Name>filament</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\iblprefilter\filament-iblprefilter.vcxproj">
+      <Project>{D684AC8A-1D78-331D-96B4-66907222E037}</Project>
+      <Name>filament-iblprefilter</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\filamentapp\filamentapp.vcxproj">
+      <Project>{77DC68A7-7AD7-3FDD-B9BE-47B539723918}</Project>
+      <Name>filamentapp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\filamentapp\filamentapp-resources.vcxproj">
+      <Project>{C05B4EB8-9162-32D4-B892-A7125716BD08}</Project>
+      <Name>filamentapp-resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\geometry\geometry.vcxproj">
+      <Project>{566E1A1B-5F47-3D61-B4F0-F84AED9C6DA4}</Project>
+      <Name>geometry</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\getopt\getopt.vcxproj">
+      <Project>{D909312D-6936-3450-813E-D86FC63FEDF4}</Project>
+      <Name>getopt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\glslang\tnt\glslang\glslang.vcxproj">
+      <Project>{74B59824-0096-38D1-BCAE-8C96D9EA21BA}</Project>
+      <Name>glslang</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\ibl\ibl-lite.vcxproj">
+      <Project>{AD366788-FDB7-3B9F-B4C1-26D106423D9F}</Project>
+      <Name>ibl-lite</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\image\image.vcxproj">
+      <Project>{A20FA4F1-4E14-3D14-9E58-488875E4B01F}</Project>
+      <Name>image</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\imgui\tnt\imgui.vcxproj">
+      <Project>{19EF226B-D471-335D-A177-F721E7928705}</Project>
+      <Name>imgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\math\math.vcxproj">
+      <Project>{39FBFF4C-71D0-3DB1-BFE1-BC2CB6A67BB1}</Project>
+      <Name>math</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\samples\sample-resources.vcxproj">
+      <Project>{0915833E-E738-36DE-8481-F9D58D3DBE8B}</Project>
+      <Name>sample-resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\libsdl2\tnt\sdl2.vcxproj">
+      <Project>{C9BB2BF5-3ACD-3DE5-8961-B6DAC17B408B}</Project>
+      <Name>sdl2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\libsdl2\tnt\sdl2main.vcxproj">
+      <Project>{DAFD0B3F-6917-3E3F-B67B-5EBE480459EC}</Project>
+      <Name>sdl2main</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\shaders\shaders.vcxproj">
+      <Project>{2F8B010A-266F-3BB2-A642-668C43A99148}</Project>
+      <Name>shaders</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\smol-v\tnt\smol-v.vcxproj">
+      <Project>{6FDE3EDE-A9DD-3556-8782-971C1EAEAC39}</Project>
+      <Name>smol-v</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\spirv-cross\tnt\spirv-cross-core.vcxproj">
+      <Project>{CA38FB85-31FE-371C-A15A-5D493DC990CA}</Project>
+      <Name>spirv-cross-core</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\spirv-cross\tnt\spirv-cross-glsl.vcxproj">
+      <Project>{12FFA987-172A-33AE-ABD0-5953AF3FFCF6}</Project>
+      <Name>spirv-cross-glsl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\spirv-cross\tnt\spirv-cross-msl.vcxproj">
+      <Project>{8EA017A5-B5E7-3AC7-9160-601C4E9A6925}</Project>
+      <Name>spirv-cross-msl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\utils\utils.vcxproj">
+      <Project>{CD76B848-7DF5-3E20-B0A8-AD32CD7ABD4B}</Project>
+      <Name>utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\libz\tnt\z.vcxproj">
+      <Project>{0A07EB8A-7DF2-352D-8EF6-41B4A0873F60}</Project>
+      <Name>z</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

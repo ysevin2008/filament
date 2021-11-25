@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\baiduyun\githun\filament\build\samples\generated\resources\dummy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\build\samples\generated\resources\resources.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\d08dac40e801f10fb06243da9ee7599d\dummy.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\aiDefaultMat.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\aoPreview.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\bakedColor.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\bakedTexture.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\groundShadow.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\heightfield.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\image.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\mirror.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\pointSprites.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\sandboxCloth.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\sandboxLit.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\sandboxLitFade.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\sandboxLitSolidRefraction.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\sandboxLitSolidRefractionSsr.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\sandboxLitThinRefraction.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\sandboxLitThinRefractionSsr.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\sandboxLitTransparent.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\sandboxSpecGloss.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\sandboxSubsurface.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\sandboxUnlit.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\materials\texturedLit.mat" />
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\d08dac40e801f10fb06243da9ee7599d\resources.bin.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3F01DEE7-2486-355C-B754-2D59EE185A44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9C58E3C9-FA52-3582-A98B-DD5704FAB13F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

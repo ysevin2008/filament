@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\glslang_tab.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\attribute.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\Constant.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\iomapper.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\InfoSink.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\Initialize.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\IntermTraverse.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\Intermediate.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\ParseContextBase.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\ParseHelper.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\PoolAlloc.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\RemoveTree.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\Scan.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\ShaderLang.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\SpirvIntrinsics.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\SymbolTable.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\Versions.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\intermOut.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\limits.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\linkValidate.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\parseConst.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\reflection.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\preprocessor\Pp.cpp">
+      <Filter>MachineIndependent\Preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\preprocessor\PpAtom.cpp">
+      <Filter>MachineIndependent\Preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\preprocessor\PpContext.cpp">
+      <Filter>MachineIndependent\Preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\preprocessor\PpScanner.cpp">
+      <Filter>MachineIndependent\Preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\preprocessor\PpTokens.cpp">
+      <Filter>MachineIndependent\Preprocessor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\propagateNoContraction.cpp">
+      <Filter>..\MachineIndependent</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\GenericCodeGen\CodeGen.cpp">
+      <Filter>..\GenericCodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\GenericCodeGen\Link.cpp">
+      <Filter>..\GenericCodeGen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\Public\ShaderLang.h">
+      <Filter>..\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\Include\arrays.h">
+      <Filter>..\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\Include\BaseTypes.h">
+      <Filter>..\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\Include\Common.h">
+      <Filter>..\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\Include\ConstantUnion.h">
+      <Filter>..\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\Include\InfoSink.h">
+      <Filter>..\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\Include\InitializeGlobals.h">
+      <Filter>..\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\Include\intermediate.h">
+      <Filter>..\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\Include\PoolAlloc.h">
+      <Filter>..\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\Include\ResourceLimits.h">
+      <Filter>..\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\Include\ShHandle.h">
+      <Filter>..\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\Include\Types.h">
+      <Filter>..\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\attribute.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\glslang_tab.cpp.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\gl_types.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\Initialize.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\iomapper.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\LiveTraverser.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\localintermediate.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\ParseHelper.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\reflection.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\RemoveTree.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\Scan.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\ScanContext.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\SymbolTable.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\Versions.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\parseVersions.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\propagateNoContraction.h">
+      <Filter>..\MachineIndependent</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\preprocessor\PpContext.h">
+      <Filter>MachineIndependent\Preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\preprocessor\PpTokens.h">
+      <Filter>MachineIndependent\Preprocessor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\tnt\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\baiduyun\githun\filament\third_party\glslang\glslang\MachineIndependent\glslang.y">
+      <Filter>..\MachineIndependent</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{A9D6EF20-E9EC-3B24-BD0F-FDA9A6A25665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\GenericCodeGen">
+      <UniqueIdentifier>{605B9291-DE6D-387E-AF37-711E256B256F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\Include">
+      <UniqueIdentifier>{8118C9A2-EF1D-3EBC-9F8F-6D133F793EF3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\MachineIndependent">
+      <UniqueIdentifier>{FD442C3E-5461-36DD-91E8-6575720BCE69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\Public">
+      <UniqueIdentifier>{5B3D365B-C388-33AB-9ED8-ECDD293066D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MachineIndependent">
+      <UniqueIdentifier>{5DBE8825-7C67-3452-9D92-365B38A62C01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MachineIndependent\Preprocessor">
+      <UniqueIdentifier>{C4D4506F-8BD5-3F61-AA89-7E6225C5D370}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

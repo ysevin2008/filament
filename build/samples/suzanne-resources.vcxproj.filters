@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\baiduyun\githun\filament\build\samples\generated\resources\dummy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\baiduyun\githun\filament\build\samples\generated\resources\monkey.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\d08dac40e801f10fb06243da9ee7599d\dummy.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\assets\models\monkey\monkey.obj">
+      <Filter>Object Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\assets\models\monkey\albedo.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\assets\models\monkey\ao.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\assets\models\monkey\metallic.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\assets\models\monkey\normal.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\assets\models\monkey\roughness.png">
+      <Filter>Resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\build\CMakeFiles\d08dac40e801f10fb06243da9ee7599d\monkey.bin.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\baiduyun\githun\filament\samples\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3F01DEE7-2486-355C-B754-2D59EE185A44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{79D67476-CA86-39D5-98CE-3F94F27026DC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{5F93B816-D373-39CD-87B6-0EB8A10A6F38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9C58E3C9-FA52-3582-A98B-DD5704FAB13F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

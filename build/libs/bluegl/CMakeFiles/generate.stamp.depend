@@ -1,0 +1,16 @@
+# CMake generation dependency list for this directory.
+D:/baiduyun/githun/filament/build/CMakeFiles/3.20.3/CMakeASMCompiler.cmake
+D:/baiduyun/githun/filament/build/CMakeFiles/3.20.3/CMakeASM_MASMCompiler.cmake
+D:/baiduyun/githun/filament/libs/bluegl/CMakeLists.txt
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeASMCompiler.cmake.in
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeASMInformation.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeASM_MASMInformation.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeCompilerIdDetection.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeDetermineASMCompiler.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeDetermineASM_MASMCompiler.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeDetermineCompiler.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeDetermineCompilerId.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeFindBinUtils.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeTestASMCompiler.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeTestASM_MASMCompiler.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/Compiler/MSVC-ASM.cmake

@@ -1,0 +1,23 @@
+# CMake generation dependency list for this directory.
+D:/baiduyun/githun/filament/CMakeLists.txt
+D:/baiduyun/githun/filament/build/CMakeFiles/3.20.3/CMakeCCompiler.cmake
+D:/baiduyun/githun/filament/build/CMakeFiles/3.20.3/CMakeCXXCompiler.cmake
+D:/baiduyun/githun/filament/build/CMakeFiles/3.20.3/CMakeRCCompiler.cmake
+D:/baiduyun/githun/filament/build/CMakeFiles/3.20.3/CMakeSystem.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeCInformation.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeCXXInformation.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeGenericSystem.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeInitializeConfigs.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeRCInformation.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeSystemSpecificInformation.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/CMakeSystemSpecificInitialize.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/Compiler/MSVC-C.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/Compiler/MSVC-CXX.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/Platform/Windows-MSVC-C.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/Platform/Windows-MSVC-CXX.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/Platform/Windows-MSVC.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/Platform/Windows.cmake
+D:/down/cmake-3.20.3-windows-x86_64/cmake-3.20.3-windows-x86_64/share/cmake-3.20/Modules/Platform/WindowsPaths.cmake

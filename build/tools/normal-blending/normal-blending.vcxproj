@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F1D6AD8D-0610-39DD-AD4B-0C61DD4D0F5C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>normal-blending</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\tools\normal-blending\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">normal-blending.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">normal-blending</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\tools\normal-blending\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">normal-blending.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">normal-blending</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\tools\normal-blending\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">normal-blending.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">normal-blending</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\tools\normal-blending\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">normal-blending.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">normal-blending</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;FILAMENT_SUPPORTS_OPENGL;IMAGEIO_SUPPORTS_BLOCK_COMPRESSION;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;FILAMENT_SUPPORTS_OPENGL;IMAGEIO_SUPPORTS_BLOCK_COMPRESSION;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;FILAMENT_SUPPORTS_OPENGL;IMAGEIO_SUPPORTS_BLOCK_COMPRESSION;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\libs\math\Debug\math.lib;..\..\libs\utils\Debug\utils.lib;..\..\third_party\libz\tnt\Debug\z.lib;..\..\libs\image\Debug\image.lib;..\..\libs\imageio\Debug\imageio.lib;..\..\third_party\getopt\Debug\getopt.lib;..\..\libs\image\Debug\image.lib;..\..\libs\math\Debug\math.lib;..\..\libs\utils\Debug\utils.lib;Shlwapi.lib;..\..\third_party\libpng\tnt\Debug\png.lib;..\..\third_party\tinyexr\tnt\Debug\tinyexr.lib;..\..\third_party\libz\tnt\Debug\z.lib;..\..\third_party\astcenc\tnt\Debug\astcenc.lib;..\..\third_party\etc2comp\EtcLib\Debug\EtcLib.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -Wl,--gc-sections</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/baiduyun/githun/filament/build/tools/normal-blending/Debug/normal-blending.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/baiduyun/githun/filament/build/tools/normal-blending/Debug/normal-blending.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;IMAGEIO_SUPPORTS_BLOCK_COMPRESSION;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;IMAGEIO_SUPPORTS_BLOCK_COMPRESSION;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;IMAGEIO_SUPPORTS_BLOCK_COMPRESSION;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\libs\math\Release\math.lib;..\..\libs\utils\Release\utils.lib;..\..\third_party\libz\tnt\Release\z.lib;..\..\libs\image\Release\image.lib;..\..\libs\imageio\Release\imageio.lib;..\..\third_party\getopt\Release\getopt.lib;..\..\libs\image\Release\image.lib;..\..\libs\math\Release\math.lib;..\..\libs\utils\Release\utils.lib;Shlwapi.lib;..\..\third_party\libpng\tnt\Release\png.lib;..\..\third_party\tinyexr\tnt\Release\tinyexr.lib;..\..\third_party\libz\tnt\Release\z.lib;..\..\third_party\astcenc\tnt\Release\astcenc.lib;..\..\third_party\etc2comp\EtcLib\Release\EtcLib.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -Wl,--gc-sections</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/baiduyun/githun/filament/build/tools/normal-blending/Release/normal-blending.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/baiduyun/githun/filament/build/tools/normal-blending/Release/normal-blending.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;IMAGEIO_SUPPORTS_BLOCK_COMPRESSION;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;IMAGEIO_SUPPORTS_BLOCK_COMPRESSION;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;IMAGEIO_SUPPORTS_BLOCK_COMPRESSION;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\libs\math\MinSizeRel\math.lib;..\..\libs\utils\MinSizeRel\utils.lib;..\..\third_party\libz\tnt\MinSizeRel\z.lib;..\..\libs\image\MinSizeRel\image.lib;..\..\libs\imageio\MinSizeRel\imageio.lib;..\..\third_party\getopt\MinSizeRel\getopt.lib;..\..\libs\image\MinSizeRel\image.lib;..\..\libs\math\MinSizeRel\math.lib;..\..\libs\utils\MinSizeRel\utils.lib;Shlwapi.lib;..\..\third_party\libpng\tnt\MinSizeRel\png.lib;..\..\third_party\tinyexr\tnt\MinSizeRel\tinyexr.lib;..\..\third_party\libz\tnt\MinSizeRel\z.lib;..\..\third_party\astcenc\tnt\MinSizeRel\astcenc.lib;..\..\third_party\etc2comp\EtcLib\MinSizeRel\EtcLib.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -Wl,--gc-sections</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/baiduyun/githun/filament/build/tools/normal-blending/MinSizeRel/normal-blending.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/baiduyun/githun/filament/build/tools/normal-blending/MinSizeRel/normal-blending.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;IMAGEIO_SUPPORTS_BLOCK_COMPRESSION;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;IMAGEIO_SUPPORTS_BLOCK_COMPRESSION;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;FILAMENT_SUPPORTS_OPENGL;IMAGEIO_SUPPORTS_BLOCK_COMPRESSION;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\baiduyun\githun\filament\build\tools\normal-blending\generated;D:\baiduyun\githun\filament\libs\math\include;D:\baiduyun\githun\filament\libs\utils\include;D:\baiduyun\githun\filament\third_party\robin-map\tnt\..;D:\baiduyun\githun\filament\third_party\libz\tnt\..;D:\baiduyun\githun\filament\libs\image\include;D:\baiduyun\githun\filament\libs\imageio\include;D:\baiduyun\githun\filament\third_party\libpng\tnt\..;D:\baiduyun\githun\filament\third_party\tinyexr\tnt\..;D:\baiduyun\githun\filament\third_party\astcenc\tnt\..\include;D:\baiduyun\githun\filament\third_party\stb\tnt\..;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\Etc;D:\baiduyun\githun\filament\third_party\etc2comp\EtcLib\EtcCodec;D:\baiduyun\githun\filament\third_party\getopt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\libs\math\RelWithDebInfo\math.lib;..\..\libs\utils\RelWithDebInfo\utils.lib;..\..\third_party\libz\tnt\RelWithDebInfo\z.lib;..\..\libs\image\RelWithDebInfo\image.lib;..\..\libs\imageio\RelWithDebInfo\imageio.lib;..\..\third_party\getopt\RelWithDebInfo\getopt.lib;..\..\libs\image\RelWithDebInfo\image.lib;..\..\libs\math\RelWithDebInfo\math.lib;..\..\libs\utils\RelWithDebInfo\utils.lib;Shlwapi.lib;..\..\third_party\libpng\tnt\RelWithDebInfo\png.lib;..\..\third_party\tinyexr\tnt\RelWithDebInfo\tinyexr.lib;..\..\third_party\libz\tnt\RelWithDebInfo\z.lib;..\..\third_party\astcenc\tnt\RelWithDebInfo\astcenc.lib;..\..\third_party\etc2comp\EtcLib\RelWithDebInfo\EtcLib.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -Wl,--gc-sections</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/baiduyun/githun/filament/build/tools/normal-blending/RelWithDebInfo/normal-blending.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/baiduyun/githun/filament/build/tools/normal-blending/RelWithDebInfo/normal-blending.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\baiduyun\githun\filament\tools\normal-blending\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/baiduyun/githun/filament/tools/normal-blending/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/tools/normal-blending/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\licenses.inc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\baiduyun\githun\filament\build\tools\normal-blending\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/baiduyun/githun/filament/tools/normal-blending/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/tools/normal-blending/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\licenses.inc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\baiduyun\githun\filament\build\tools\normal-blending\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/baiduyun/githun/filament/tools/normal-blending/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/tools/normal-blending/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\licenses.inc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\baiduyun\githun\filament\build\tools\normal-blending\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/baiduyun/githun/filament/tools/normal-blending/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\down\cmake-3.20.3-windows-x86_64\cmake-3.20.3-windows-x86_64\bin\cmake.exe -SD:/baiduyun/githun/filament -BD:/baiduyun/githun/filament/build --check-stamp-file D:/baiduyun/githun/filament/build/tools/normal-blending/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\licenses.inc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\baiduyun\githun\filament\build\tools\normal-blending\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\baiduyun\githun\filament\tools\normal-blending\src\main.cpp" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_growth_policy.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_hash.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_map.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\robin-map\tsl\robin_set.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\deprecated\rrsprintf.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_c_lexer.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_connected_components.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_divide.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_dxt.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_easy_font.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_herringbone_wang_tile.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_image.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_image_resize.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_image_write.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_leakcheck.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_perlin.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_rect_pack.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_sprintf.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_textedit.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_tilemap_editor.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_truetype.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stb_voxel_render.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\stretchy_buffer.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\cave_parse.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\caveview.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\glext.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\glext_list.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\stb_gl.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\caveview\stb_glprog.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\oversample\stb_wingraph.h" />
+    <ClInclude Include="D:\baiduyun\githun\filament\third_party\stb\tests\prerelease\stb_lib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\ZERO_CHECK.vcxproj">
+      <Project>{C81F8C41-FE7E-32AB-96E5-9EE9D2248535}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\etc2comp\EtcLib\EtcLib.vcxproj">
+      <Project>{BEC1B533-E357-3365-B4A9-BB1E1341534B}</Project>
+      <Name>EtcLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\astcenc\tnt\astcenc.vcxproj">
+      <Project>{00928365-08FB-3A1A-9834-F1768A26CDA0}</Project>
+      <Name>astcenc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\getopt\getopt.vcxproj">
+      <Project>{D909312D-6936-3450-813E-D86FC63FEDF4}</Project>
+      <Name>getopt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\image\image.vcxproj">
+      <Project>{A20FA4F1-4E14-3D14-9E58-488875E4B01F}</Project>
+      <Name>image</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\imageio\imageio.vcxproj">
+      <Project>{F4034964-FF9D-3BA9-BF79-9DC13501E197}</Project>
+      <Name>imageio</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\math\math.vcxproj">
+      <Project>{39FBFF4C-71D0-3DB1-BFE1-BC2CB6A67BB1}</Project>
+      <Name>math</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\libpng\tnt\png.vcxproj">
+      <Project>{0700448F-4D01-33CB-95D0-C017E5FE439B}</Project>
+      <Name>png</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\tinyexr\tnt\tinyexr.vcxproj">
+      <Project>{376BB6DE-F899-3C1F-B730-8267606D57C7}</Project>
+      <Name>tinyexr</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\libs\utils\utils.vcxproj">
+      <Project>{CD76B848-7DF5-3E20-B0A8-AD32CD7ABD4B}</Project>
+      <Name>utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\baiduyun\githun\filament\build\third_party\libz\tnt\z.vcxproj">
+      <Project>{0A07EB8A-7DF2-352D-8EF6-41B4A0873F60}</Project>
+      <Name>z</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
